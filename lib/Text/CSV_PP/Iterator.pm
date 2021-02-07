@@ -358,6 +358,16 @@ which does not set $self->{header} either. It sets $self->{field_pos}. Oh, dear.
 
 =back
 
+=head1 Repository
+
+L<https://github.com/ronsavage/Text-CSV_PP-Iterator>
+
+=head1 Support
+
+Bugs should be reported via the CPAN bug tracker at
+
+L<https://github.com/ronsavage/Text-CSV_PP-Iterator/issues>
+
 =head1 Author
 
 C<Text::CSV_PP::Iterator> was written by Ron Savage I<E<lt>ron@savage.net.auE<gt>> in 2007.
