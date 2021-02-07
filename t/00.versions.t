@@ -5,14 +5,16 @@ use warnings;
 
 # I tried 'require'-ing modules but that did not work.
 
-use Config::Tiny; # For the version #.
+use Text::CSV_PP-Iterator; # For the version #.
 
 use Test::More;
 
-use File::Spec;
-use File::Temp;
-use strict;
-use utf8;
+use Exception::Class;
+use Iterator;
+use Iterator::IO;
+use Test::More;
+use Test::Pod;
+use Text::CSV_PP;
 
 # ----------------------
 
@@ -20,13 +22,15 @@ pass('All external modules loaded');
 
 my(@modules) = qw
 /
-	File::Spec
-	File::Temp
-	strict
-	utf8
+	Exception::Class
+	Iterator
+	Iterator::IO
+	Test::More
+	Test::Pod
+	Text::CSV_PP
 /;
 
-diag "Testing Config::Tiny V $Config::Tiny::VERSION";
+diag "Testing Text::CSV_PP-Iterator V $Text::CSV_PP-Iterator::VERSION";
 
 for my $module (@modules)
 {
