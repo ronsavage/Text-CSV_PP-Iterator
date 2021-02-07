@@ -5,7 +5,7 @@ use warnings;
 
 # I tried 'require'-ing modules but that did not work.
 
-use Text::CSV_PP-Iterator; # For the version #.
+use Text::CSV_PP::Iterator; # For the version #.
 
 use Test::More;
 
