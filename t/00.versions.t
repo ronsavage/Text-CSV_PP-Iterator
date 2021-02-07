@@ -30,7 +30,7 @@ my(@modules) = qw
 	Text::CSV_PP
 /;
 
-diag "Testing Text::CSV_PP-Iterator V $Text::CSV_PP-Iterator::VERSION";
+diag "Testing Text::CSV_PP::Iterator V $Text::CSV_PP::Iterator::VERSION";
 
 for my $module (@modules)
 {
